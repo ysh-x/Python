@@ -1,0 +1,11 @@
+import platform
+print("\n\n")
+print("+----------------KNOW YOUR MACHINE---------+")
+print(" MACHINE USED : ",platform.machine())
+print(" ARCHITECTURE :",platform.architecture())
+print(" NODE : ",platform.node())
+print(" PROCESSOR",platform.processor())
+print(" SYSTEM :",platform.system())
+print(" VERSION: ",platform.version())
+print(" USERNAME :",platform.uname())
+print("+-----------------------------------------------+")
