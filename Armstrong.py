@@ -1,26 +1,15 @@
-def armstrong(num):
+def armstrong(Number):
+    Sum = 0
+    temp = Number
+    while Number > 0:
+        rem = int(Number%10)
+        dig = int(Number/10)
+        Number = int(Number/10)
+        Sum =  Sum+pow(rem,3)
+        #print("Sum: ",Sum)
+        if(Sum==temp):
+            print(temp,"IS AN ARMTRONG NUMBER")
 
-    sum = 0
-    temp = num 
-    while num > 0:
-        rem = int(num%10)
-        dig = int(num/10)
-        num = int(num/10)
-        sum = sum+pow(rem,3)
-        """
-        print("REM: ",rem)
-        print("DIG: ",dig)
-        print("NUM: ",num)
-        print("Sum: ",sum)
-        """
-        
-        if temp == sum:
-            print(temp,'IS AN ARMSTRONG NUMBER')
-
-
-dummy = 101
-while dummy <500:
-
-    armstrong(dummy)
-    dummy+=1
-    
+Number = int(input("ENTER THE NUMBER: "))
+armstrong(Number)
+   
